@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+    transition: .5s;
+}
+
+body {
+    background-color: #181818;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* header */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .dropbtn,
+nav>a {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown>a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 7px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+    background-color: #181818;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    padding: 12px 16px;
+    display: block;
+    color: #eee;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #181818;
+}
+
+.show {
+    display: block;
+}
+
+header .header_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 44px;
+}
+
+header .container {
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.dropbtn img:hover {
+    transform: rotate(180deg);
+}
+
+header {
+    border-bottom: 1px solid #eee;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 7px 11px;
+    border: none;
+}
+
+.btn_1 {
+    background-color: #24B47E;
+    color: #FFFFFF;
+    box-shadow: 0px 2px 0px 0px #0000000B;
+}
+
+.btn_2 {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+/* banner */
+.banner {
+    margin-top: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .banner_left .storage {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    height: 32px;
+    margin-bottom: 28px;
+}
+
+.banner .banner_left .storage p {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0%;
+}
+
+.banner h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #FFFFFF;
+    margin-bottom: 52px;
+}
+
+.banner p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #E0E0E0;
+    margin-bottom: 11px;
+}
+
+.banner .btn {
+    margin-top: 53px;
+    padding: 9px 17px;
+}
+
+/* advents */
+.advents {
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.ad_card {
+    width: 280px;
+}
+
+.ad_card h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.ad_card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    width: 255px;
+    color: #E0E0E0;
+}
+
+.ad_card .fs {
+    font-size: 13px;
+}
+
+/* sleek */
+.sleek>h1 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.sleek>h2 {
+    color: #E0E0E0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-top: 16px;
+}
+
+.sleek>p {
+    color: #E0E0E0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.sleek_box {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.sleek_right>h4 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.sleek_right>h5 {
+    margin-top: 20px;
+    color: #E0E0E0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.sleek_right>h6 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-bottom: 16px;
+}
+
+.sleek_right .check{
+    width: 100%;
+    height: 160px;
+    background-color: #1F1F1F;
+    padding: 21px;
+}
+
+.sleek_right .check h5{
+    color: #FFFFFF;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+margin-bottom: 4px;
+}
+
+.sleek_right .check>p{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.sleek_right {
+    width: 373px;
+}
+
+.filtering {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+}
+
+.created{
+    margin-top: 18px;
+    color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+
+.sleek_right .next>p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FFFFFF;    
+}
+
+.next{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.filtering .btn {
+    outline: none;
+    border-radius: 0%;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 7px 13px;
+    color: #666666;
+    background-color: transparent;
+}
+
+.sleek_left img {
+    width: 558px;
+    margin-top: 16px;
+}
+
+.sleek_right img{
+    cursor: pointer;
+    margin-bottom: 21px;
+}
+
+.sleek hr{
+    border: 1px solid  #1F1F1F;
+}
+
+.filtering .btn:hover,
+.btn:focus {
+    color: #FFFFFF;
+    background-color: #2A2A2A;
+    box-shadow: 0px 2px 0px 0px #0000000B;
+}
+
+/* Integrates natively */
+.integrates h1 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.2px;
+    letter-spacing: 0%;
+    margin-bottom: 21px;
+}
+
+.accordions {
+    width: 100%;
+    margin-bottom: 156px;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #E0E0E0;
+}
+
+.accordion img:hover {
+    transform: rotate(180deg);
+}
+
+.panel {
+    padding-top: 30px;
+    display: none;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.panel p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #E0E0E0;
+}
+
+.panel .btn {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #E0E0E0;
+    background-color: #2A2A2A;
+    border: 1px solid #2A2A2A;
+    box-shadow: 0px 2px 0px 0px #0000000B;
+
+}
+
+/* footer */
+footer .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+footer .icons {
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    gap: 24px;
+}
+
+nav a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #EEEEEE;
+}
+
+footer .right {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+footer nav .main {
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+footer nav {
+    width: 160px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 33px;
+    border-top: 1px solid #666666;
+    margin-bottom: 250px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #666666;
+}
