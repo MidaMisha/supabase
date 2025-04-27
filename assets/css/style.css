@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -166,22 +165,22 @@ header {
     padding: 9px 17px;
 }
 
-.banner .slider  .slide{
+.banner .slider .slide {
     width: 525px;
     height: 431px;
 }
 
-.banner  .slide{ 
+.banner .slide {
     width: 525px;
-    height: 431px; 
+    height: 431px;
     display: none;
 }
 
- .banner  .slide.active{
+.banner .slide.active {
     display: block;
 }
 
- .banner .slider{
+.banner .slider {
     position: relative;
     overflow: hidden;
 }
@@ -257,6 +256,23 @@ header {
     margin-bottom: 130px;
 }
 
+.sleek_img {
+    display: none;
+    max-height: 367px;
+}
+
+.sleek_img.active {
+    display: block;
+}
+
+.sleek_right {
+    display: none;
+}
+
+.sleek_right.active {
+    display: block;
+}
+
 .sleek_right>h4 {
     color: #FFFFFF;
     font-weight: 400;
@@ -283,23 +299,23 @@ header {
     margin-bottom: 16px;
 }
 
-.sleek_right .check{
+.sleek_right .check {
     width: 100%;
     height: 160px;
     background-color: #1F1F1F;
     padding: 21px;
 }
 
-.sleek_right .check h5{
+.sleek_right .check h5 {
     color: #FFFFFF;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0%;
-margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 4px;
 }
 
-.sleek_right .check>p{
+.sleek_right .check>p {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 13px;
@@ -318,7 +334,7 @@ margin-bottom: 4px;
     gap: 12px;
 }
 
-.created{
+.created {
     margin-top: 18px;
     color: #E0E0E0;
     display: flex;
@@ -327,16 +343,16 @@ margin-bottom: 4px;
     gap: 8px;
 }
 
-.sleek_right .next>p{
+.sleek_right .next>p {
     font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
-    color: #FFFFFF;    
+    color: #FFFFFF;
 }
 
-.next{
+.next {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -363,17 +379,18 @@ margin-bottom: 4px;
     margin-top: 16px;
 }
 
-.sleek_right img{
+.sleek_right>img {
     cursor: pointer;
     margin-bottom: 21px;
 }
 
-.sleek hr{
-    border: 1px solid  #1F1F1F;
+.sleek hr {
+    border: 1px solid #1F1F1F;
 }
 
 .filtering .btn:hover,
-.btn:focus {
+.filtering .btn:focus,
+.filtering .btn:active {
     color: #FFFFFF;
     background-color: #2A2A2A;
     box-shadow: 0px 2px 0px 0px #0000000B;
@@ -508,4 +525,64 @@ footer p {
     line-height: 24px;
     letter-spacing: 0%;
     color: #666666;
+}
+
+/* Модальное окно */
+.modal-auth {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-auth-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 350px;
+}
+
+.modal-auth-close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-auth h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.modal-auth input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.cab_reg {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #24B47E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }

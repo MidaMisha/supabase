@@ -61,3 +61,34 @@ function switchSlides(){
 }
 
 setInterval(switchSlides, 1500)
+
+document.querySelector('.btn_filter').classList.add('active')
+document.querySelector('.sleek_right').classList.add('active')
+document.querySelector('.sleek_img').classList.add('active')
+
+let btns = document.querySelectorAll('.btn_filter')
+let sleek_rights = document.querySelectorAll('.sleek_right')
+let imgs = document.querySelectorAll('.sleek_img')
+
+btns.forEach((btn, index) => {
+  btn.onclick = () => {
+    document.querySelector('.btn_filter.active').classList.remove('active')
+    btn.classList.add('active')
+    document.querySelector('.sleek_right.active').classList.remove('active')
+    sleek_rights[index].classList.add('active')
+    document.querySelector('.sleek_img.active').classList.remove('active')
+    imgs[index].classList.add('active')
+  }
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('authModal').style.display = 'block';
+    window.closeAuthModal = function() {
+      document.getElementById('authModal').style.display = 'none';
+    }
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('authModal')) {
+        closeAuthModal();
+      }
+    }
+  });

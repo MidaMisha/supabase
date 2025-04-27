@@ -97,15 +97,19 @@
         <div class="sleek_box">
             <div class="sleek_left">
                 <div class="filtering">
-                    <button class="btn" autofocus>File previews</button>
-                    <button class="btn">Column view</button>
-                    <button class="btn">List view</button>
-                    <button class="btn">Multi select actions</button>
-                    <button class="btn">Path navigator</button>
+                    <button class="btn btn_filter" autofocus>File previews</button>
+                    <button class="btn btn_filter">Column view</button>
+                    <button class="btn btn_filter">List view</button>
+                    <button class="btn btn_filter">Multi select actions</button>
+                    <button class="btn btn_filter">Path navigator</button>
                 </div>
-                <img src="assets/media/sleek.png" alt="">
+                <img src="assets/media/sleek/1.png" class="sleek_img active" alt="">
+                <img src="assets/media/sleek/2.png" alt="" class="sleek_img">
+                <img src="assets/media/sleek/3.png" alt="" class="sleek_img">
+                <img src="assets/media/sleek/4.png" alt="" class="sleek_img">
+                <img src="assets/media/sleek/5.png" alt="" class="sleek_img">
             </div>
-            <div class="sleek_right">
+            <div class="sleek_right active">
                 <h4>File previews</h4>
                 <h5>Preview any media type, including video and audio.</h5>
                 <h6>Check out our example app</h6>
@@ -121,7 +125,83 @@
                 <div class="next"><p>nextjs-ts-user-management</p> 
                 <img src="assets/media/git.png" alt="">
                 </div>
-                
+                <img src="assets/media/button.png" alt="">
+                <hr>
+            </div>
+            <div class="sleek_right">
+                <h4>Column view</h4>
+                <h5>Preview any file type, from documents to 3D models.</h5>
+                <h6>Explore our demo app</h6>
+                <div class="check">
+                    <h5>User Settings Example</h5>
+                    <p>Learn how to modify account details and manage profile photos in our demo.</p>
+                    <div class="created">
+                        <p>Created by:</p>
+                        <img src="assets/logo/favicon.png" alt="">
+                        <p>supabase</p>
+                    </div>
+                </div>
+                <div class="next"><p>nextjs-ts-user-management</p> 
+                <img src="assets/media/git.png" alt="">
+                </div>
+                <img src="assets/media/button.png" alt="">
+                <hr>
+            </div>
+            <div class="sleek_right">
+                <h4>List view</h4>
+                <h5>Supports all formats: images, PDFs, archives, and more.</h5>
+                <h6>See how it works in our example</h6>
+                <div class="check">
+                    <h5>Account Management Demo</h5>
+                    <p>See how to edit user profiles and upload avatar images in our live example.</p>
+                    <div class="created">
+                        <p>Created by:</p>
+                        <img src="assets/logo/favicon.png" alt="">
+                        <p>supabase</p>
+                    </div>
+                </div>
+                <div class="next"><p>nextjs-ts-user-management</p> 
+                <img src="assets/media/git.png" alt="">
+                </div>
+                <img src="assets/media/button.png" alt="">
+                <hr>
+            </div>
+            <div class="sleek_right">
+                <h4>Multi select actions</h4>
+                <h5>Work with any media files, including RAW photos and presentations.
+                </h5>
+                <h6>Get inspired by our template</h6>
+                <div class="check">
+                    <h5>Profile Customization</h5>
+                    <p>Update personal information and add profile images in just a few clicks.</p>
+                    <div class="created">
+                        <p>Created by:</p>
+                        <img src="assets/logo/favicon.png" alt="">
+                        <p>supabase</p>
+                    </div>
+                </div>
+                <div class="next"><p>nextjs-ts-user-management</p> 
+                <img src="assets/media/git.png" alt="">
+                </div>
+                <img src="assets/media/button.png" alt="">
+                <hr>
+            </div>
+            <div class="sleek_right">
+                <h4>Path navigator</h4>
+                <h5>Open files directly in your browser—no extra software needed.</h5>
+                <h6>Try it out in our sample project</h6>
+                <div class="check">
+                    <h5>User Profile Setup</h5>
+                    <p>Easily manage account details and upload profile pictures with our intuitive interface.</p>
+                    <div class="created">
+                        <p>Created by:</p>
+                        <img src="assets/logo/favicon.png" alt="">
+                        <p>supabase</p>
+                    </div>
+                </div>
+                <div class="next"><p>nextjs-ts-user-management</p> 
+                <img src="assets/media/git.png" alt="">
+                </div>
                 <img src="assets/media/button.png" alt="">
                 <hr>
             </div>
@@ -176,6 +256,26 @@
         </div>
     </div>
 
+    <!-- authModal -->
+    <div id="authModal" class="modal-auth">
+        <div class="modal-auth-content">
+          <span class="modal-auth-close" onclick="closeAuthModal()">&times;</span>
+          <h2>Вход</h2>
+          <form>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Пароль">
+            </div>
+            <div class="cab_reg">
+              <p>Нет аккаунта?</p>
+              <a href="#">Зарегистрироваться</a>
+            </div>
+            <button type="submit" class="submit-btn">Войти</button>
+          </form>
+        </div>
+      </div>
 
     <!-- footer -->
     <footer>
