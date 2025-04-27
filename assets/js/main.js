@@ -1,4 +1,5 @@
 
+
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -43,3 +44,20 @@ for (i = 0; i < acc.length; i++) {
     }
     )
 }
+
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0
+
+function switchSlides(){
+    slides[currentIndex].classList.remove('active');
+
+    currentIndex ++;
+
+    if(currentIndex >= slides.length){
+        currentIndex = 0
+    }
+
+    slides[currentIndex].classList.add('active');
+}
+
+setInterval(switchSlides, 1500)

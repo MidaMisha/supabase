@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -94,9 +95,6 @@ header nav {
     gap: 25px;
 }
 
-.dropbtn img:hover {
-    transform: rotate(180deg);
-}
 
 header {
     border-bottom: 1px solid #eee;
@@ -166,6 +164,26 @@ header {
 .banner .btn {
     margin-top: 53px;
     padding: 9px 17px;
+}
+
+.banner .slider  .slide{
+    width: 525px;
+    height: 431px;
+}
+
+.banner  .slide{ 
+    width: 525px;
+    height: 431px; 
+    display: none;
+}
+
+ .banner  .slide.active{
+    display: block;
+}
+
+ .banner .slider{
+    position: relative;
+    overflow: hidden;
 }
 
 /* advents */
